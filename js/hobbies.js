@@ -3,7 +3,7 @@
 
 
 
-// creo una funzione in cui restituiscxa un arrai di stringhe
+// creo una funzione in cui restituiscxa un array di stringhe
 
 function hobbies(hobbyOne, hobbyTwo, hobbyThree){
 
