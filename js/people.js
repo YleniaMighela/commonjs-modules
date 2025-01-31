@@ -12,3 +12,29 @@ const fullName = require ("./names.js");
 
 // importo la funzione hobbies
 const hobbies = require("./hobbies.js");
+
+
+
+
+// creo una funzione senza paramentri
+function personIdentity(){
+    
+    // salvo in una costante la precedente funzione che restituisce un oggetto   
+    // fullName("ylenia","mighela") quindi l'oggetto sarebbe composto in questo modo firstName:ylenia e lastName:mighela
+    const person = fullName("ylenia","mighela");
+    
+    // salvo in una costante la precedente funzione che restituisce un array   
+    //hobbies("nuoto","danza","basket") quindi l'array sarebbe composta in questo modo 
+    // ["nuoto","danza","basket"]
+    const passions = hobbies("nuoto","danza","basket");
+    
+
+
+    return {
+        // utilizzo il template literal per concatenare i valori
+        fullName: `${person.firstName} ${person.lastName}`,
+        hobbies: passions
+    };
+    
+};
+console.log(personIdentity());
